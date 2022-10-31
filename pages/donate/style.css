@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.overall-boundry {
+  min-width: 1600px;
+  border: 1px dotted red;
+  margin: 0 auto;
+}
+
+.interactive:hover {
+  cursor: pointer;
+  background: #333333;
+  text-decoration: underline;
+  color: red;
+}
+
+.header-background {
+  background-color: black;
+}
+
+.header {
+  max-width: 1160px;
+  border: 1px dotted green;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 100%;
+}
+
+.header_item {
+  display: flex;
+  padding: 20px;
+}
+.header_item:hover {
+  color: orange;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin content-boundry {
+  //
+  max-width: 1160px;
+  border: 1px dotted green;
+  margin: 0 auto;
+  // background-color: gray;
+}
+
+.overall-boundry {
+  min-width: 1600px;
+
+  border: 1px dotted red;
+  margin: 0 auto;
+}
+
+.interactive {
+  &:hover {
+    cursor: pointer;
+    background: lighten(#000, 20);
+    text-decoration: underline;
+    color: red;
+  }
+}
+
+.header-background {
+  background-color: black;
+}
+
+.header {
+  @include content-boundry();
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  //
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 100%;
+}
+
+.header_item {
+  display: flex;
+  padding: 20px;
+  &:hover {
+    color: orange;
+    cursor: pointer;
+  }
+}
+
+.designed-by {
+  //
+}
